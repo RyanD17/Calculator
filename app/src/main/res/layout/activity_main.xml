@@ -29,7 +29,12 @@
         android:gravity="center"
         android:hint="integer"
         android:text="Calcuator"
+<<<<<<< HEAD
         android:textColorHint="@color/black"
+=======
+        android:textColorHint="@color/teal_200"
+        android:background="@android:color/holo_blue_dark"
+>>>>>>> e5df318 (This is the first commit)
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
@@ -91,10 +96,17 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equals"
         app:layout_constraintVertical_bias="0.268" />
+=======
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equals"
+        app:layout_constraintVertical_bias="0.173" />
+>>>>>>> e5df318 (This is the first commit)
 
     <Switch
         android:id="@+id/Switch"
@@ -108,6 +120,36 @@
         app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.536" />
+=======
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/counterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Calculations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Switch"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/counterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:hint="0"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterTitle"
+        app:layout_constraintVertical_bias="0.402" />
+>>>>>>> e5df318 (This is the first commit)
 
 </androidx.constraintlayout.widget.ConstraintLayout>

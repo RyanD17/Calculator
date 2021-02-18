@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
         final Button equals;
         equals = findViewById(R.id.equals);
 
+<<<<<<< HEAD
+=======
+        final int[] counter = {0};
+        TextView numCalView = findViewById(R.id.counterNumber);
+
+
+>>>>>>> e5df318 (This is the first commit)
         equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,18 +49,39 @@ public class MainActivity extends AppCompatActivity {
                         if (sign.getText().toString().equals("+")){
                             int sum = Int1 + Int2;
                             result.setText(Integer.toString(sum));
+<<<<<<< HEAD
+=======
+                            numCalView.setText(Integer.toString(counter[0] += 1));
+
+>>>>>>> e5df318 (This is the first commit)
                         }
                         if (sign.getText().toString().equals("-")){
                             int sum = Int1 - Int2;
                             result.setText(Integer.toString(sum));
+<<<<<<< HEAD
+=======
+                            numCalView.setText(Integer.toString(counter[0] += 1));
+
+
+>>>>>>> e5df318 (This is the first commit)
                         }
                         if (sign.getText().toString().equals("*")){
                             int sum = Int1 * Int2;
                             result.setText(Integer.toString(sum));
+<<<<<<< HEAD
+=======
+                            numCalView.setText(Integer.toString(counter[0] += 1));
+
+>>>>>>> e5df318 (This is the first commit)
                         }
                         if (sign.getText().toString().equals("/")){
                             int sum = Int1 / Int2;
                             result.setText(Integer.toString(sum));
+<<<<<<< HEAD
+=======
+                            numCalView.setText(Integer.toString(counter[0] += 1));
+
+>>>>>>> e5df318 (This is the first commit)
                         }
                     }
                     else{
