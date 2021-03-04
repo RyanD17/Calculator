@@ -20,7 +20,8 @@
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.166"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/Title"
@@ -29,19 +30,16 @@
         android:gravity="center"
         android:hint="integer"
         android:text="Calcuator"
-<<<<<<< HEAD
-        android:textColorHint="@color/black"
-=======
         android:textColorHint="@color/teal_200"
         android:background="@android:color/holo_blue_dark"
->>>>>>> e5df318 (This is the first commit)
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.025"
+        android:fontFamily="cursive"/>
 
     <EditText
         android:id="@+id/number1"
@@ -56,7 +54,8 @@
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.07"
+        android:fontFamily="cursive"/>
 
     <EditText
         android:id="@+id/sign"
@@ -72,7 +71,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/number1"
         app:layout_constraintTop_toBottomOf="@+id/Title"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.045"
+        android:fontFamily="cursive"/>
 
     <Button
         android:id="@+id/equals"
@@ -85,7 +85,8 @@
         app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number2"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.153"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/result"
@@ -96,34 +97,11 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/equals"
-        app:layout_constraintVertical_bias="0.268" />
-=======
         app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equals"
-        app:layout_constraintVertical_bias="0.173" />
->>>>>>> e5df318 (This is the first commit)
-
-    <Switch
-        android:id="@+id/Switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textIsSelectable="false"
-        android:textOff="OFF"
-        android:textOn="ON"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.536" />
-=======
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.173"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/counterTitle"
@@ -134,8 +112,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Switch"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.222"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/counterNumber"
@@ -149,7 +128,32 @@
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/counterTitle"
-        app:layout_constraintVertical_bias="0.402" />
->>>>>>> e5df318 (This is the first commit)
+        app:layout_constraintVertical_bias="0.402"
+        android:fontFamily="cursive"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="@id/counterNumber"
+        app:layout_constraintEnd_toEndOf="@id/counterNumber"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterTitle"
+        app:layout_constraintVertical_bias="0.402"
+        android:fontFamily="cursive"/>
+
+    <Button
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/checkbox"
+        app:layout_constraintEnd_toStartOf="@+id/equals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1"
+        android:fontFamily="cursive"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

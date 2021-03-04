@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -42,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
         equals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!number1.getText().toString().equals("")&& !number2.getText().toString().equals("")){
-                    if (!sign.getText().toString().equals("+") || !sign.getText().toString().equals("-")|| !sign.getText().toString().equals("*")  || !sign.getText().toString().equals("/") ){
+                if (!number1.getText().toString().equals("") && !number2.getText().toString().equals("")) {
+                    if (!sign.getText().toString().equals("+") || !sign.getText().toString().equals("-") || !sign.getText().toString().equals("*") || !sign.getText().toString().equals("/")) {
                         int Int1 = Integer.parseInt(number1.getText().toString());
                         int Int2 = Integer.parseInt(number2.getText().toString());
-                        if (sign.getText().toString().equals("+")){
+                        if (sign.getText().toString().equals("+")) {
                             int sum = Int1 + Int2;
                             result.setText(Integer.toString(sum));
 <<<<<<< HEAD
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 >>>>>>> e5df318 (This is the first commit)
                         }
-                        if (sign.getText().toString().equals("-")){
+                        if (sign.getText().toString().equals("-")) {
                             int sum = Int1 - Int2;
                             result.setText(Integer.toString(sum));
 <<<<<<< HEAD
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 >>>>>>> e5df318 (This is the first commit)
                         }
-                        if (sign.getText().toString().equals("*")){
+                        if (sign.getText().toString().equals("*")) {
                             int sum = Int1 * Int2;
                             result.setText(Integer.toString(sum));
 <<<<<<< HEAD
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
 >>>>>>> e5df318 (This is the first commit)
                         }
-                        if (sign.getText().toString().equals("/")){
+                        if (sign.getText().toString().equals("/")) {
                             int sum = Int1 / Int2;
                             result.setText(Integer.toString(sum));
 <<<<<<< HEAD
@@ -83,38 +84,33 @@ public class MainActivity extends AppCompatActivity {
 
 >>>>>>> e5df318 (This is the first commit)
                         }
-                    }
-                    else{
+                    } else {
                         System.out.println("Error, enter an addition, subtraction, multiplication, or division sign");
                     }
-                }
-                else{
+                } else {
                     System.out.println("Error, Text field is empty ");
                 }
             }
         });
+        final CheckBox myCheckbox = findViewById(R.id.checkbox);
 
-        final Switch mySwitch = findViewById(R.id.Switch);
-
-
-        mySwitch.setOnClickListener(new View.OnClickListener() {
+        myCheckbox.setOnClickListener(new View.OnClickListener() {
 
             boolean isOn = false;
 
             @Override
             public void onClick(View v) {
-                if (!isOn){// The switch is on
-                    mySwitch.setText("On");//setting the text of the switch to Off
-                    mySwitch.setBackgroundColor(Color.GREEN);
+                if (!isOn) {// If the switch is on then this line of code will execute
+                    myCheckbox.setText("On");//setting the text of the switch to Off
+                    myCheckbox.setBackgroundColor(Color.GREEN);
                     isOn = true;
                     equals.setEnabled(true);
                     number1.setEnabled(true);
                     number2.setEnabled(true);
                     sign.setEnabled(true);
-                }
-                else{
-                    mySwitch.setText("Off");
-                    mySwitch.setBackgroundColor(Color.RED);
+                } else {
+                    myCheckbox.setText("Off");
+                    myCheckbox.setBackgroundColor(Color.RED);
                     isOn = false;
                     equals.setEnabled(false);
                     number1.setEnabled(false);
